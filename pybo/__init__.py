@@ -24,3 +24,6 @@ def create_app():
     app.register_blueprint(answer_views.bp)
 
     return app
+
+
+
