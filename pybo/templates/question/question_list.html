@@ -17,7 +17,7 @@
             <td>
                 <a href="{{ url_for('question.detail', question_id=question.id) }}">{{ question.subject }}</a>
             </td>
-            <td> {{ question.create_date|datetime }} </td>
+            <td> {{ question.create_date }} </td>
         </tr>
         {% endfor %}
         {% else %}
@@ -51,7 +51,7 @@
             <a class="page-link" href="javascript:void(0)">{{ page_num }}</a>
         </li>
         {% endif %}
-qumain        {% else %}
+        {% else %}
         <li class="disabled">
             <a class="page-link" href="javascript:void(0)">...</a>
         </li>
